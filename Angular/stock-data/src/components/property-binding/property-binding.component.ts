@@ -1,10 +1,12 @@
 import { Component } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 
 @Component({
   selector: "property-binding",
   standalone: true,
   templateUrl: "./property-binding.component.html",
-  styleUrl: "./property-binding.component.less"
+  styleUrl: "./property-binding.component.less",
+  imports: [FormsModule]
 })
 export class PropertBindingComponent {
   displayValue: string = "block";
