@@ -1,0 +1,7 @@
+<p>child-two-component works!</p>
+
+<ng-container *ngFor="let employee of commonDataServiceInstance.employeeDetails">
+  <b>Employee Name is: {{employee['userName']}}</b><br/><br/>
+</ng-container>
+<b>Data from Common Service Instance: {{commonDataServiceInstance.commonDataString}} {{commonDataServiceInstance.counter}}</b><hr/>
+

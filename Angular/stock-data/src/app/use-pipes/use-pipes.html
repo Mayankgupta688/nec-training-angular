@@ -1,0 +1,11 @@
+<div id="use-pipes">
+  <h1>The User name is {{userName}}</h1>
+  <input type="text" [(ngModel)]="userName" />
+  <h1>The User salary is {{userSalary}}</h1>
+  <br/><hr/><br/>
+  <h2>The User Name is {{userName | uppercase}}</h2>
+  <h2>The User Name is {{userName | lowercase}}</h2>
+  <h2>The User Name is {{userName | titlecase}}</h2>
+  <h2>The User Salary is {{userSalary | currency:"INR":"code" }}</h2>
+  <h2>Percent is {{somePercent | percent }}</h2>
+</div>

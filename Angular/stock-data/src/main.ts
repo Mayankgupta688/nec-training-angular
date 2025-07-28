@@ -1,5 +1,5 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app.config';
-import { TemplateBindingComponent } from './components/template-binding/template-binding.component';
+import { UseAsync } from './app/use-async/use-async';
 
-bootstrapApplication(TemplateBindingComponent, appConfig);
+bootstrapApplication(UseAsync, appConfig);

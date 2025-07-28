@@ -1,0 +1,3 @@
+<div *ngIf="appObservable$ | async as stockData">
+  <h1>Stock Value is {{stockData.data.pricecurrent}}</h1>
+</div>

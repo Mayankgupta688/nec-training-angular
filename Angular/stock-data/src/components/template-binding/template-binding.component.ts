@@ -3,13 +3,14 @@ import  { Component } from "@angular/core";
 import IEmployeeDirector from "../../interfaces/appInterface";
 import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
+import { EmployeeCount } from "../employee-count/employee-count"
 
 @Component({
   selector: "template-binding",
   templateUrl: "template-binding.component.html",
   styleUrl: "template-binding.component.less",
   standalone: true,
-  imports: [CommonModule, HttpClientModule, FormsModule]
+  imports: [CommonModule, HttpClientModule, FormsModule, EmployeeCount]
 })
 export class TemplateBindingComponent {
   userDetails: IEmployeeDirector[] = [];
@@ -23,6 +24,10 @@ export class TemplateBindingComponent {
     this.http.get("http://localhost:3000/employees").subscribe((response: any) => {
       this.userDetails = response;
     });
+  }
+
+  triggerFunction(inputData: any) {
+    alert("Function Triggered...." + inputData['name'])
   }
 
   deleteUser(userId: number) {

@@ -1,0 +1,8 @@
+<h1>This is Parent Component</h1>
+<h3>List of Employees in my Company is: {{commonDataServiceInstance.employeeDetails.length}}</h3>
+<b>Data from Common Service Instance: {{commonDataServiceInstance.commonDataString}}</b><br/><br/>
+<input type="button" (click)="updateData()" value="Click to Update" /><hr/>
+<h2>This is Child Component One</h2>
+<app-child-one-component></app-child-one-component><hr/>
+<h2>This is Child Component Two</h2>
+<app-child-two-component></app-child-two-component>

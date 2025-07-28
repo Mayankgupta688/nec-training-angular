@@ -1,5 +1,5 @@
 <div style="color: grey; padding: 20px;">
-  <h1>The Employees in the Company are listed Below: </h1>
+  <employee-count [empCount]="userDetails.length" (notifyParent)="triggerFunction($event)"></employee-count>
   <ng-container *ngFor="let user of userDetails">
       <div class="card" style="width: 12rem; margin: 10px; display: inline-block;">
         <img [src]="user.userImage" class="card-img-top" [alt]="user.userName">
